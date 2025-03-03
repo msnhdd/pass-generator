@@ -1,5 +1,5 @@
 # Password Generator
-a password generator with these options:
+a password generator with these options:<br/>
 • add lowercase option to the password
 • add uppercase option to the password
 • add numbers option to the password
