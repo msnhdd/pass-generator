@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Title -->
+    <h1>Password Generator</h1>
+
+    <!-- Password Display and Copy Button -->
+    <div class="password-container">
+      <input type="text" id="password-output" readonly placeholder="Your password will appear here">
+      <button id="copy-btn">Copy</button>
+    </div>
+
+    <!-- Password Settings Title -->
+    <h2>Password Settings</h2>
+
+    <!-- Checkboxes for Password Options -->
+    <div class="settings-grid">
+      <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
+      <label><input type="checkbox" id="uppercase"> Include Uppercase</label>
+      <label><input type="checkbox" id="numbers"> Include Numbers</label>
+      <label><input type="checkbox" id="symbols"> Include Symbols</label>
+      <label><input type="checkbox" id="exclude-duplicate"> Exclude Duplicates</label>
+      <label><input type="checkbox" id="include-spaces"> Include Spaces</label>
+    </div>
+
+    <!-- Password Length Selector -->
+    <div class="length-selector">
+      <label for="password-length">Password Length:</label>
+      <input type="range" id="password-length" min="8" max="32" value="12">
+      <span id="length-value">12</span>
+    </div>
+
+    <!-- Generate Password Button -->
+    <button id="generate-btn">Generate Password</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
